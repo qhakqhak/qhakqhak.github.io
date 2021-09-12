@@ -1,0 +1,438 @@
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    font-family: 'Farro', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration:none;
+    word-break:keep-all;
+  
+}
+
+
+/*sidebar__________________________________________*/
+.sidebar {
+    position: fixed;
+    width: 105px;
+    height: 100%;
+    z-index: 10;
+    border-right: 4px solid black;
+    background: white;
+}
+
+.sidebar_name, .sidebar_info, .sidebar_insta, .sidebar_email{    
+    line-height: 50px;
+    white-space: nowrap;
+    position: absolute;
+}
+        .sidebar_name {
+            font-size: 55px;
+            transform-origin: right top;
+            transform: rotate(-90deg);
+            top: 25px;
+            right: 65px;
+        }
+
+        .sidebar_info {
+            font-size: 55px;
+            transform-origin: left bottom;
+            bottom: 160px;
+            left: 51px;
+        }
+
+        .sidebar_insta {
+            font-size: 53px;
+            transform-origin: left bottom;
+            bottom: 85px;
+            left: 35px;
+        }
+
+        .sidebar_email {
+            font-size: 67px;
+            transform-origin: left bottom;
+            bottom: 20px;
+            left: 35px;
+        }
+
+
+
+
+/*grid__________________________________________*/
+.grid_div{
+    background-color: #ffffff;
+    position: fixed;
+    font-size: 44px;
+    line-height: 60px;
+    padding: 15px 30px 0px 160px;
+    width: 85%;
+}
+
+
+.grid_nav{
+    display:grid;
+    grid-template-columns: 80% 20%;
+    margin-right:30px;
+
+}
+
+.md_info {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:18px;
+    padding-left:160px;
+    padding-right: 7.5vw;
+    padding-bottom: 75px;
+    grid-gap:40px;
+    min-width:200px;
+    
+}
+
+.grid_nav:hover {
+    color: rgb(255, 0, 242);
+    border-bottom:solid 4px rgb(255, 0, 242);
+}
+
+.footer {
+    position: absolute;
+    height:75px;
+    opacity: 0;
+
+}
+
+/*text__________________________________________*/
+a:link, a:visited {
+    color: black;
+  }
+  
+
+h1{
+    letter-spacing: -0.75px;
+}
+
+h2{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+p{
+    font-size: 20px;
+    font-weight:400;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    
+}
+
+h1:hover, a:hover{
+   color: rgb(255, 0, 242);
+  }
+
+.md_info_kor h2{
+    font-size:28.5px;
+}
+
+.md_info_kor p{
+    font-size:20.5px;
+    font-weight:500;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+.categorize {
+    text-align:end;
+    font-weight:normal;
+    font-size:40px;
+}
+
+/*img__________________________________________*/
+
+.photos{
+    display:block;
+	position:fixed;
+	z-index: -99;
+    visibility: hidden;
+}
+
+div > img{
+    max-width: 100%;
+    display: block;
+
+}
+
+.main_image{
+    padding-left: 100px; 
+    border-bottom: 4px solid black;
+}
+
+.detail_image{
+    max-width:60%;
+    align-content: center;
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+#Ori_image{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-left: 120px;
+    border:none;
+    max-width: 85%;
+}
+
+#OJG{
+    max-width:50%;
+}
+
+
+
+
+/*img slider*/
+* {box-sizing: border-box}
+.mySlides1, .mySlides2,.mySlides3,.mySlides4 {display: none}
+.mySlides1, .mySlides2,.mySlides3,.mySlides4 img {
+vertical-align: middle;    
+border: 4px solid black;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 24px;
+  margin-top: -22px;
+  color: black;
+  font-size: 35px;
+  border-radius: 0 3px 3px 0;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.add_info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left:21vw;
+    margin-top:5vw;
+    margin-right: 20vw;
+    margin-bottom: 25px;
+    grid-gap:30px;
+}
+
+
+
+
+
+
+
+
+
+/* screen mode__________________________________________*/
+@media (max-width: 720px) {
+    body {
+        margin-top: 15vw;
+        overflow: scroll;
+
+    }
+
+    .grid_div {
+        background-color: #ffffff;
+        position: fixed;
+        font-size: 5vw;
+        line-height: 7.5vw;
+        padding: 15px 2.5vw 25px 20px;
+        
+        width: 100%;
+    }
+
+    .grid_nav{
+        display:grid;
+        grid-template-columns: 100% 0%;
+        margin-right:9vw;
+    }
+   
+    .categorize {
+        text-align:end;
+        font-weight:normal;
+        font-size:4vw;
+        visibility:hidden;
+    }
+
+    .md_info {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-top:2.5vw;
+        padding-left:4.25vw;
+        padding-right: 5vw;
+        grid-gap:30px;
+    
+    }
+    
+    h2{
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+    
+    p{
+        font-size: 3.75vw;
+        line-height: 5.5vw;
+        letter-spacing: -0.6px;
+        
+    }
+    
+    .md_info_kor h2{
+        font-size:6vw;
+        line-height: 10vw;
+    }
+    
+    .md_info_kor p{
+        font-size:4vw;
+        line-height:5.75vw;
+        letter-spacing: -0.05vw;
+    }
+
+    .add_info{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin-left:6vw;
+        margin-top:6vw;
+        margin-right: 6vw;
+        margin-bottom: 25px;
+        grid-gap: 20px;
+        font-size: 10px;
+    }
+
+    .add_info > p{
+        font-size:3vw;
+        line-height: 4.5vw;
+    }
+
+ 
+    .main_image{
+        padding-left: 0; 
+        border-bottom:3px solid black;
+    }
+
+    .detail_image{
+        max-width:89%;
+        margin-top:9px;
+        margin-bottom:9px;
+        border:3px solid black;
+        line-height:0.75em;
+    }
+
+
+    /**img slider**/
+    .mySlides1, .mySlides2,.mySlides3,.mySlides4 img {
+        align-content: center;
+        border: 3px solid black;
+      
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+      }
+
+    .slideshow-container{
+        max-width:89%;
+    }
+
+    #Ori_image{
+        grid-template-columns:none;
+        border:none;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+        
+    #OJG{
+        max-width:85%;
+        margin-bottom:50px;
+    }
+
+
+
+    /* screen mode-sidebar*/
+    .sidebar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 15vw;
+        border-right: none;
+        background-color:white;
+        border-bottom: 4px solid black;
+    }
+    
+
+    .sidebar_name, .sidebar_info, .sidebar_insta, .sidebar_email {
+        top: 3vw;
+        line-height: 10.5vw;
+    }
+
+            .sidebar_name {
+                transform: rotate(0deg);
+                font-size: 8.5vw;
+                left: 4.25vw;
+            }
+
+            .sidebar_info {
+                font-size: 7.5vw;
+                left: initial;
+                right: 22.5vw;
+            }
+
+            .sidebar_insta {
+                font-size: 7vw;
+                left: initial;
+                right: 13.1vw;
+            }
+
+            .sidebar_email {
+                font-size: 9vw;
+                left: initial;
+                right: 3.5vw;
+            }
+            /* ______________________________________*/
+    
+   
+
+            
+
+
+
+}
+
+::selection{
+    background-color: rgb(255, 0, 242);
+    color: white;
+}
+

@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title> Seoyoung Qhak</title>
+        <link rel = "stylesheet"  href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" id="SB" style="display:block">
+            <h1 class="sidebar_name" href="index.html">Seoyoung Qhak</h1>
+            <a class="sidebar_info" href="info.html">i</a>
+            <a class="sidebar_insta" href="https://www.instagram.com/gwakagi">♥</a>
+            <a class="sidebar_email" href="#">✉</a>
+        </div>
+
+        <div class="grid_div">
+            <nav class="grid_nav" id="TT"> 
+                <div href="Texturing_Type.html" id="test"> Texturing Type </div>
+                <div class="categorize">book</div>
+                <img class="photos" id="TT_photo" src="img001.jpg" width="400">
+
+            </nav>
+
+            <nav class="grid_nav" id="EE">
+                <div href="#"> Expension Experiment of Type Family </div>
+                <div class="categorize">book</div>
+                <img class="photos" id="EE_photo" src="img002.jpg" width="400">
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#"> OurWirye Marathon </div>
+                <div class="categorize">identity</div>
+                
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#"> Apocalypse Dictionary of Now </div>
+                <div class="categorize">book</div>
+                
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#">Children’s song </div>
+                <div class="categorize">motion</div>
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#">Leaflet for Ordinary People </div>
+                <div class="categorize">editorial</div>
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#">The complete works of Psalms </div>
+                <div class="categorize">book</div>
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#">Ganadara #6 </div>
+                <div class="categorize">book</div>
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#"> Ori-Jinhuk-Gui </div>
+                <div class="categorize">lettering</div>
+            </nav>
+
+            <nav class="grid_nav">
+                <div href="#">Lettering Collection </div>
+                <div class="categorize">lettering</div>
+            </nav>
+        
+        
+        </div>
+
+
+    <script>
+
+    var TT = document.getElementById("TT")
+    var TT_photo = document.getElementById("TT_photo")
+
+    TT.addEventListener("mouseover", mouseOver);
+    TT.addEventListener("mouseout", mouseOut);
+    function mouseOver() {document.getElementById("TT_photo").style.visibility="visible";}
+    function mouseOut() {document.getElementById("TT_photo").style.visibility="hidden";}
+
+     /*
+    var TT = document.getElementById("TT")
+    var EE = document.getElementById("EE")
+
+    var TT_photo = document.getElementById("TT_photo")
+    var EE_photo = document.getElementById("EE_photo")
+
+    var nav = ["TT", "EE"]
+    var img = ["TT_photo", "EE_photo"]
+    
+    var i=0;
+    while(i<=nav.length){
+        nav[i].addEventListener("mouseover", mouseOver);
+        nav[i].addEventListener("mouseout", mouseOut);
+        document.getElementById("img[i]").style.visibility="visible";}
+        document.getElementById("img[i]").style.visibility="hidden";}
+    i=i+1;
+}
+*/
+    /* img mouseover & mouseout*/
+    var x_offset = 750;
+    var y_offset = 650;
+    function updatePosition( e ){
+
+        var TT_photo = document.getElementById("TT_photo");
+        TT_photo.style.top = e.y -TT_photo.clientHeight + y_offset + "px";
+        TT_photo.style.left = e.x - TT_photo.clientWidth + x_offset + "px";
+
+        var EE_photo = document.getElementById("EE_photo");
+        EE_photo.style.top = e.y -EE_photo.clientHeight + y_offset/2 + "px";
+        EE_photo.style.left = e.x - EE_photo.clientWidth + x_offset/2 + "px";
+        
+        
+    }
+
+    document.onmousemove = updatePosition;
+
+
+    </script>
+
+    </body>
+</html>
