@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title> Seoyoung Qhak</title>
+        <link rel = "stylesheet"  href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" id="SB" style="display:block">
+            <h1 class="sidebar_name" href="index.html">Seoyoung Qhak</h1>
+            <a class="sidebar_info" href="#">i</a>
+            <a class="sidebar_insta" href="#">♥</a>
+            <a class="sidebar_email" href="#">✉</a>
+        </div>
+
+   
+        <div class="grid_div">
+            
+            <nav class="grid_nav" id="GMC"> 
+                <div href="#"> Gumnanse Music Center </div>
+                <div class="categorize">identity</div>
+                <img class="photos" id="GMC_photo" src="#" width="400">
+            </nav>
+
+            <nav class="grid_nav" id="EE">
+                <div><a href="EE.html"> Expension Experiment of Type Family</a></div>
+                <div class="categorize">book</div>
+                <img class="photos" id="EE_photo" src="img002.jpg" width="400">
+            </nav>
+
+            <nav class="grid_nav" id="Campaign"> 
+                <div><a href="Campaign.html">Visit Korean Heritage Campaign </a></div>
+                <div class="categorize">identity</div>
+                <img class="photos" id="Campaign_photo" src="../Website/img/Campaign/Visit_Korean_Heritage_Campaign_logo.png" width="200">
+            </nav>
+            
+
+            <nav class="grid_nav" id="Wirye">
+                <div><a href="OurWirye_Marathon.html"> OurWirye Marathon </a></div>
+                <div class="categorize">identity</div>
+                <img class="photos" id="Wirye_photo" src="" width="400">
+            </nav>
+        
+            <nav class="grid_nav" id="Dic">
+                <div><a href="Dic.html"> Apocalypse Dictionary of Now </a></div>
+                <div class="categorize">book</div>
+                <img class="photos" id="Dic_photo" src="" width="400">
+            </nav>
+        
+
+            <nav class="grid_nav" id="Child">
+                <div><a href="Children.html"> Children’s Song </a></div>
+                <div class="categorize">motion</div>
+                <img class="photos" id="Child_photo" src="" width="400">
+            </nav>
+
+            <nav class="grid_nav" id="Psalms">
+                <div><a href="Psalms.html"> The Complete Works of Psalms </a></div>
+                <div class="categorize">book</div>
+                <img class="photos" id="Psalms_photo" src="img/Psalms/Psalms_preview.jpg" width="400">
+            </nav>
+
+
+            <nav class="grid_nav" id="Ganadara">
+                <div><a href="Ganadara6.html">Ganadara #6 </a></div>
+                <div class="categorize">book</div>
+                <img class="photos" id="Ganadara_photo" src="../Website/img/Ganadara/이미지0.png" width="400">
+            </nav>
+        
+             
+            <nav class="grid_nav" id="Ori">
+                <div> <a href="Ori.html">Ori-Jinhuk-Gui</a></div>
+                <div class="categorize">lettering</div>
+                <img class="photos" id="Ori_photo" src="../Website/img/Ori/image0.png" width="400">
+            </nav>
+
+            <nav class="grid_nav" id=Lettering>
+                <div><a href="Lettering Collection.html">Lettering Collection</a> </div>
+                <div class="categorize">lettering</div>
+                <img class="photos" id="Lettering_photo" src="../Website/img/lettering/love.png" width="400">
+            </nav>
+        
+        
+        </div>
+
+
+    <script>
+
+    /*img visibility*/
+    $("#GMC").mouseover(function() {
+        $('#GMC_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#GMC_photo').css("visibility", "hidden");
+    });
+
+    $("#EE").mouseover(function() {
+        $('#EE_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#EE_photo').css("visibility", "hidden");
+    });
+
+    $("#Campaign").mouseover(function() {
+        $('#Campaign_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Campaign_photo').css("visibility", "hidden");
+    });
+
+    $("#Wirye").mouseover(function() {
+        $('#Wirye_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Wirye_photo').css("visibility", "hidden");
+    });
+    
+    $("#Dic").mouseover(function() {
+        $('#Dic_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Dic_photo').css("visibility", "hidden");
+    });
+
+    $("#Child").mouseover(function() {
+        $('#Child_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Child_photo').css("visibility", "hidden");
+    });
+
+    $("#Psalms").mouseover(function() {
+        $('#Psalms_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Psalms_photo').css("visibility", "hidden");
+    });
+
+    $("#Ganadara").mouseover(function() {
+        $('#Ganadara_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Ganadara_photo').css("visibility", "hidden");
+    });
+
+    $("#Ori").mouseover(function() {
+        $('#Ori_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Ori_photo').css("visibility", "hidden");
+    });
+
+    $("#Lettering").mouseover(function() {
+        $('#Lettering_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Lettering_photo').css("visibility", "hidden");
+    });    
+
+
+
+    /* img mouseover & mouseout*/
+    var x_offset = 750;
+    var y_offset = 650;
+    function updatePosition( e ){
+        var GMC_photo = document.getElementById("GMC_photo");
+        GMC_photo.style.top = e.y - GMC_photo.clientHeight + y_offset/2 + "px";
+        GMC_photo.style.left = e.x - GMC_photo.clientWidth + x_offset + "px";
+
+        var EE_photo = document.getElementById("EE_photo");
+        EE_photo.style.top = e.y -EE_photo.clientHeight + y_offset/2 + "px";
+        EE_photo.style.left = e.x - EE_photo.clientWidth + x_offset/2 + "px";
+
+        var Campaign_photo = document.getElementById("Campaign_photo");
+        Campaign_photo.style.top = e.y - Campaign_photo.clientHeight + y_offset/3 + "px";
+        Campaign_photo.style.left = e.x - Campaign_photo.clientWidth + x_offset/2 + "px";
+
+        var Wirye_photo = document.getElementById("Wirye_photo");
+        Wirye_photo.style.top = e.y -Wirye_photo.clientHeight + y_offset/2 + "px";
+        Wirye_photo.style.left = e.x - Wirye_photo.clientWidth + x_offset/2 + "px";
+
+        var Dic_photo = document.getElementById("Dic_photo");
+        Dic_photo.style.top = e.y -Dic_photo.clientHeight + y_offset + "px";
+        Dic_photo.style.left = e.x - Dic_photo.clientWidth + x_offset + "px";
+       
+        var Psalms_photo = document.getElementById("Psalms_photo");
+        Psalms_photo.style.top = e.y -Psalms_photo.clientHeight + y_offset + "px";
+        Psalms_photo.style.left = e.x - Psalms_photo.clientWidth + x_offset + "px";
+
+        var Ganadara_photo = document.getElementById("Ganadara_photo");
+        Ganadara_photo.style.top = e.y -Ganadara_photo.clientHeight + y_offset/3+"px";
+        Ganadara_photo.style.left = e.x - Ganadara_photo.clientWidth + x_offset+"px";
+
+        var Ori_photo = document.getElementById("Ori_photo");
+        Ori_photo.style.top = e.y -Ori_photo.clientHeight + y_offset/3 + "px";
+        Ori_photo.style.left = e.x - Ori_photo.clientWidth + x_offset + "px";
+
+        var Lettering_photo = document.getElementById("Lettering_photo");
+        Lettering_photo.style.top = e.y -Lettering_photo.clientHeight + "px";
+        Lettering_photo.style.left = e.x - Lettering_photo.clientWidth + x_offset/2 + "px";
+    }
+
+    document.onmousemove = updatePosition;
+
+
+    </script>
+
+    </body>
+</html>
