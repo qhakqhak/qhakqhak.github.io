@@ -15,8 +15,8 @@
     <body>
         <div class="sidebar" id="SB" style="display:block">
             <h1 class="sidebar_name" href="index.html">Seoyoung Qhak</h1>
-            <a class="sidebar_info" href="#">i</a>
-            <a class="sidebar_insta" href="#">♥</a>
+            <a class="sidebar_info" href="info.html">i</a>
+            <a class="sidebar_insta" href="https://www.instagram.com/gwakagi">♥</a>
             <a class="sidebar_email" href="#">✉</a>
         </div>
 
@@ -32,13 +32,13 @@
             <nav class="grid_nav" id="EE">
                 <div><a href="EE.html"> Expension Experiment of Type Family</a></div>
                 <div class="categorize">book</div>
-                <img class="photos" id="EE_photo" src="img002.jpg" width="400">
+                <img class="photos" id="EE_photo" src="../img/EE/EE_preview.png" width="400">
             </nav>
 
             <nav class="grid_nav" id="Campaign"> 
                 <div><a href="Campaign.html">Visit Korean Heritage Campaign </a></div>
                 <div class="categorize">identity</div>
-                <img class="photos" id="Campaign_photo" src="../Website/img/Campaign/Visit_Korean_Heritage_Campaign_logo.png" width="200">
+                <img class="photos" id="Campaign_photo" src="../img/Campaign/Visit_Korean_Heritage_Campaign_logo.png" width="200">
             </nav>
             
 
@@ -64,27 +64,27 @@
             <nav class="grid_nav" id="Psalms">
                 <div><a href="Psalms.html"> The Complete Works of Psalms </a></div>
                 <div class="categorize">book</div>
-                <img class="photos" id="Psalms_photo" src="img/Psalms/Psalms_preview.jpg" width="400">
+                <img class="photos" id="Psalms_photo" src="../img/Psalms/Psalms_preview.jpg" width="400">
             </nav>
 
 
             <nav class="grid_nav" id="Ganadara">
                 <div><a href="Ganadara6.html">Ganadara #6 </a></div>
                 <div class="categorize">book</div>
-                <img class="photos" id="Ganadara_photo" src="../Website/img/Ganadara/이미지0.png" width="400">
+                <img class="photos" id="Ganadara_photo" src="../img/Ganadara/이미지0.png" width="400">
             </nav>
         
              
             <nav class="grid_nav" id="Ori">
                 <div> <a href="Ori.html">Ori-Jinhuk-Gui</a></div>
                 <div class="categorize">lettering</div>
-                <img class="photos" id="Ori_photo" src="../Website/img/Ori/image0.png" width="400">
+                <img class="photos" id="Ori_photo" src="../img/Ori/image0.png" width="400">
             </nav>
 
             <nav class="grid_nav" id=Lettering>
                 <div><a href="Lettering Collection.html">Lettering Collection</a> </div>
                 <div class="categorize">lettering</div>
-                <img class="photos" id="Lettering_photo" src="../Website/img/lettering/love.png" width="400">
+                <img class="photos" id="Lettering_photo" src="../img/lettering/love.png" width="400">
             </nav>
         
         
@@ -181,7 +181,7 @@
         Dic_photo.style.left = e.x - Dic_photo.clientWidth + x_offset + "px";
        
         var Psalms_photo = document.getElementById("Psalms_photo");
-        Psalms_photo.style.top = e.y -Psalms_photo.clientHeight + y_offset + "px";
+        Psalms_photo.style.top = e.y -Psalms_photo.clientHeight + y_offset/4 + "px";
         Psalms_photo.style.left = e.x - Psalms_photo.clientWidth + x_offset + "px";
 
         var Ganadara_photo = document.getElementById("Ganadara_photo");
@@ -194,7 +194,7 @@
 
         var Lettering_photo = document.getElementById("Lettering_photo");
         Lettering_photo.style.top = e.y -Lettering_photo.clientHeight + "px";
-        Lettering_photo.style.left = e.x - Lettering_photo.clientWidth + x_offset/2 + "px";
+        Lettering_photo.style.left = e.x - Lettering_photo.clientWidth + x_offset/3 + "px";
     }
 
     document.onmousemove = updatePosition;
