@@ -23,6 +23,24 @@
    
         <div class="grid_div">
             
+            <nav class="grid_nav" id="Kitreat"> 
+                <div><a href="Kitreat.html"> Kitreat </a></div>
+                <div class="categorize">UX/UI</div>
+                <img class="photos" id="TT_photo" src="../img/Kitreat/Kitreat_0.png" width="400">
+            </nav>
+            
+            <nav class="grid_nav" id="SHW"> 
+                <div><a href="Kitreat.html"> Superhighway </a></div>
+                <div class="categorize">Motion</div>
+                <img class="photos" id="TT_photo" src="../img/Superhighway/Superhighway_0.png" width="400">
+            </nav>
+            
+            <nav class="grid_nav" id="TT"> 
+                <div><a href="TT.html"> Texturing Type </a></div>
+                <div class="categorize">Graphic</div>
+                <img class="photos" id="TT_photo" src="../img/TT/TT_0.png" width="400">
+            </nav>
+            
             <nav class="grid_nav" id="TT"> 
                 <div><a href="TT.html"> Texturing Type </a></div>
                 <div class="categorize">Graphic</div>
@@ -100,7 +118,20 @@
     <script>
 
     /*img visibility*/
+     
+    $("#Kitreat").mouseover(function() {
+        $('#Kitreat_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Kitreat_photo').css("visibility", "hidden");
+    });
         
+    $("#SHW").mouseover(function() {
+        $('#SHW_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#SHW_photo').css("visibility", "hidden");
+    });
+        
+    
     $("#TT").mouseover(function() {
         $('#TT_photo').css("visibility", "visible");
     }).mouseout(function() {
@@ -173,6 +204,13 @@
     var x_offset = 750;
     var y_offset = 650;
     function updatePosition( e ){
+        var Kitreat_photo = document.getElementById("Kitreat_photo");
+        Kitreat_photo.style.top = e.y -Kitreat_photo.clientHeight + y_offset/2 + "px";
+        Kitreat_photo.style.left = e.x - Kitreat_photo.clientWidth + x_offset/2 + "px";
+        
+        var SHW_photo = document.getElementById("SHW_photo");
+        SHW_photo.style.top = e.y - SHW_photo.clientHeight + y_offset/2 + "px";
+        SHW_photo.style.left = e.x - SHW_photo.clientWidth + x_offset + "px";
         
         var TT_photo = document.getElementById("TT_photo");
         TT_photo.style.top = e.y -TT_photo.clientHeight + y_offset/2 + "px";
