@@ -65,20 +65,12 @@
                 <img class="photos" id="Campaign_photo" src="../img/Campaign/Visit_Korean_Heritage_Campaign_logo.png" width="200">
             </nav>
             
-
             <nav class="grid_nav" id="Wirye">
                 <div><a href="OurWirye_Marathon.html"> OurWirye Marathon </a></div>
                 <div class="categorize">identity</div>
                 <img class="photos" id="Wirye_photo" src="" width="400">
             </nav>
         
-            <nav class="grid_nav" id="Dic">
-                <div><a href="Dic.html"> Apocalypse Dictionary of Now </a></div>
-                <div class="categorize">book</div>
-                <img class="photos" id="Dic_photo" src="" width="400">
-            </nav>
-        
-
             <nav class="grid_nav" id="Child">
                 <div><a href="Children.html"> Children’s Song </a></div>
                 <div class="categorize">motion</div>
@@ -161,13 +153,7 @@
     }).mouseout(function() {
         $('#Wirye_photo').css("visibility", "hidden");
     });
-    
-    $("#Dic").mouseover(function() {
-        $('#Dic_photo').css("visibility", "visible");
-    }).mouseout(function() {
-        $('#Dic_photo').css("visibility", "hidden");
-    });
-
+        
     $("#Child").mouseover(function() {
         $('#Child_photo').css("visibility", "visible");
     }).mouseout(function() {
@@ -232,10 +218,6 @@
         Wirye_photo.style.top = e.y -Wirye_photo.clientHeight + y_offset/2 + "px";
         Wirye_photo.style.left = e.x - Wirye_photo.clientWidth + x_offset/2 + "px";
 
-        var Dic_photo = document.getElementById("Dic_photo");
-        Dic_photo.style.top = e.y -Dic_photo.clientHeight + y_offset + "px";
-        Dic_photo.style.left = e.x - Dic_photo.clientWidth + x_offset + "px";
-       
         var Psalms_photo = document.getElementById("Psalms_photo");
         Psalms_photo.style.top = e.y -Psalms_photo.clientHeight + y_offset/4 + "px";
         Psalms_photo.style.left = e.x - Psalms_photo.clientWidth + x_offset + "px";
