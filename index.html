@@ -23,24 +23,6 @@
    
         <div class="grid_div">
             
-            <nav class="grid_nav" id="Kitreat"> 
-                <div><a href="Kitreat.html"> Kitreat </a></div>
-                <div class="categorize">UX/UI</div>
-                <img class="photos" id="TT_photo" src="../img/Kitreat/Kitreat_0.png" width="400">
-            </nav>
-            
-            <nav class="grid_nav" id="SHW"> 
-                <div><a href="Kitreat.html"> Superhighway </a></div>
-                <div class="categorize">Motion</div>
-                <img class="photos" id="TT_photo" src="../img/Superhighway/Superhighway_0.png" width="400">
-            </nav>
-            
-            <nav class="grid_nav" id="TT"> 
-                <div><a href="TT.html"> Texturing Type </a></div>
-                <div class="categorize">Graphic</div>
-                <img class="photos" id="TT_photo" src="../img/TT/TT_0.png" width="400">
-            </nav>
-            
             <nav class="grid_nav" id="TT"> 
                 <div><a href="TT.html"> Texturing Type </a></div>
                 <div class="categorize">Graphic</div>
@@ -51,6 +33,12 @@
                 <div href="#"> Gumnanse Music Center </div>
                 <div class="categorize">identity</div>
                 <img class="photos" id="GMC_photo" src="../img/GMC/orchesra0.png" width="400">
+            </nav>
+            
+             <nav class="grid_nav" id="Gnnochi">
+                <div><a href="Gnnochi.html"> How to make Gnnochi </a></div>
+                <div class="categorize">Video</div>
+                <img class="photos" id="Gnnochi_photo" src="" width="400">
             </nav>
 
             <nav class="grid_nav" id="EE">
@@ -71,18 +59,11 @@
                 <img class="photos" id="Wirye_photo" src="" width="400">
             </nav>
         
-            <nav class="grid_nav" id="Child">
-                <div><a href="Children.html"> Children’s Song </a></div>
-                <div class="categorize">motion</div>
-                <img class="photos" id="Child_photo" src="" width="400">
-            </nav>
-
             <nav class="grid_nav" id="Psalms">
                 <div><a href="Psalms.html"> The Complete Works of Psalms </a></div>
                 <div class="categorize">book</div>
                 <img class="photos" id="Psalms_photo" src="../img/Psalms/Psalms_preview.jpg" width="400">
             </nav>
-
 
             <nav class="grid_nav" id="Ganadara">
                 <div><a href="Ganadara6.html">Ganadara #6 </a></div>
@@ -111,19 +92,6 @@
 
     /*img visibility*/
      
-    $("#Kitreat").mouseover(function() {
-        $('#Kitreat_photo').css("visibility", "visible");
-    }).mouseout(function() {
-        $('#Kitreat_photo').css("visibility", "hidden");
-    });
-        
-    $("#SHW").mouseover(function() {
-        $('#SHW_photo').css("visibility", "visible");
-    }).mouseout(function() {
-        $('#SHW_photo').css("visibility", "hidden");
-    });
-        
-    
     $("#TT").mouseover(function() {
         $('#TT_photo').css("visibility", "visible");
     }).mouseout(function() {
@@ -134,6 +102,12 @@
         $('#GMC_photo').css("visibility", "visible");
     }).mouseout(function() {
         $('#GMC_photo').css("visibility", "hidden");
+    });
+        
+    $("#Gnnochi").mouseover(function() {
+        $('#Gnnochi_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Gnnochi_photo').css("visibility", "hidden");
     });
 
     $("#EE").mouseover(function() {
@@ -154,12 +128,6 @@
         $('#Wirye_photo').css("visibility", "hidden");
     });
         
-    $("#Child").mouseover(function() {
-        $('#Child_photo').css("visibility", "visible");
-    }).mouseout(function() {
-        $('#Child_photo').css("visibility", "hidden");
-    });
-
     $("#Psalms").mouseover(function() {
         $('#Psalms_photo').css("visibility", "visible");
     }).mouseout(function() {
@@ -190,14 +158,6 @@
     var x_offset = 750;
     var y_offset = 650;
     function updatePosition( e ){
-        var Kitreat_photo = document.getElementById("Kitreat_photo");
-        Kitreat_photo.style.top = e.y -Kitreat_photo.clientHeight + y_offset/2 + "px";
-        Kitreat_photo.style.left = e.x - Kitreat_photo.clientWidth + x_offset/2 + "px";
-        
-        var SHW_photo = document.getElementById("SHW_photo");
-        SHW_photo.style.top = e.y - SHW_photo.clientHeight + y_offset/2 + "px";
-        SHW_photo.style.left = e.x - SHW_photo.clientWidth + x_offset + "px";
-        
         var TT_photo = document.getElementById("TT_photo");
         TT_photo.style.top = e.y -TT_photo.clientHeight + y_offset/2 + "px";
         TT_photo.style.left = e.x - TT_photo.clientWidth + x_offset/2 + "px";
@@ -205,6 +165,10 @@
         var GMC_photo = document.getElementById("GMC_photo");
         GMC_photo.style.top = e.y - GMC_photo.clientHeight + y_offset/2 + "px";
         GMC_photo.style.left = e.x - GMC_photo.clientWidth + x_offset + "px";
+        
+        var Gnnochi_photo = document.getElementById("GMC_photo");
+        Gnnochi_photo.style.top = e.y - Gnnochi_photo.clientHeight + y_offset/2 + "px";
+        Gnnochi_photo.style.left = e.x - Gnnochi_photo.clientWidth + x_offset + "px";
 
         var EE_photo = document.getElementById("EE_photo");
         EE_photo.style.top = e.y -EE_photo.clientHeight + y_offset/2 + "px";
