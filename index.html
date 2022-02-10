@@ -43,11 +43,17 @@
             
             <nav class="grid_nav" id="GMC"> 
                 <div href="#"> Gumnanse Music Center </div>
-                <div class="categorize">identity</div>
-                <img class="photos" id="GMC_photo" src="../img/GMC/orchesra0.png" width="400">
+                <div class="categorize">Identity</div>
+                <img class="photos" id="GMC_photo" src="../img/GMC/GMC_0.png" width="400">
             </nav>
             
-             <nav class="grid_nav" id="Gnnochi">
+            <nav class="grid_nav" id="Wemi"> 
+                <div href="#"> Wemi </div>
+                <div class="categorize">Identity</div>
+                <img class="photos" id="Wemi_photo" src="../img/Wemi/Wemi_0.png" width="400">
+            </nav>
+            
+            <nav class="grid_nav" id="Gnnochi">
                 <div><a href="Gnnochi.html"> How to make Gnnochi </a></div>
                 <div class="categorize">Illustration</div>
                 <img class="photos" id="Gnnochi_photo" src="../img/Gnnochi/Gnnochi_0.png" width="400">
@@ -201,12 +207,12 @@
         GMC_photo.style.top = e.y - GMC_photo.clientHeight + y_offset/2 + "px";
         GMC_photo.style.left = e.x - GMC_photo.clientWidth + x_offset + "px";
         
-        var Gnnochi_photo = document.getElementById("GMC_photo");
+        var Gnnochi_photo = document.getElementById("Gnnochi_photo");
         Gnnochi_photo.style.top = e.y - Gnnochi_photo.clientHeight + y_offset/2 + "px";
         Gnnochi_photo.style.left = e.x - Gnnochi_photo.clientWidth + x_offset + "px";
 
         var EE_photo = document.getElementById("EE_photo");
-        EE_photo.style.top = e.y -EE_photo.clientHeight + y_offset/2 + "px";
+        EE_photo.style.top = e.y - EE_photo.clientHeight + y_offset/2 + "px";
         EE_photo.style.left = e.x - EE_photo.clientWidth + x_offset/2 + "px";
 
         var Campaign_photo = document.getElementById("Campaign_photo");
@@ -221,16 +227,16 @@
         Psalms_photo.style.top = e.y -Psalms_photo.clientHeight + y_offset/4 + "px";
         Psalms_photo.style.left = e.x - Psalms_photo.clientWidth + x_offset + "px";
 
-        var Ganadara_photo = document.getElementById("Ganadara_photo");
-        Ganadara_photo.style.top = e.y -Ganadara_photo.clientHeight + y_offset/3+"px";
-        Ganadara_photo.style.left = e.x - Ganadara_photo.clientWidth + x_offset+"px";
+        var Ganadara_photo = document.getElementById("Political_photo");
+        Ganadara_photo.style.top = e.y - Political_photo.clientHeight + y_offset/3+"px";
+        Ganadara_photo.style.left = e.x - Political_photo.clientWidth + x_offset+"px";
 
         var Ori_photo = document.getElementById("Ori_photo");
         Ori_photo.style.top = e.y -Ori_photo.clientHeight + y_offset/3 + "px";
-        Ori_photo.style.left = e.x - Ori_photo.clientWidth + x_offset + "px";
+        Ori_photo.style.left = e.x - Ori_photo.clientWidth + x_offset/2 + "px";
 
         var Lettering_photo = document.getElementById("Lettering_photo");
-        Lettering_photo.style.top = e.y -Lettering_photo.clientHeight + "px";
+        Lettering_photo.style.top = e.y -Lettering_photo.clientHeight + y_offset/3 + "px";
         Lettering_photo.style.left = e.x - Lettering_photo.clientWidth + x_offset/3 + "px";
     }
 
