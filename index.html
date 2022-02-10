@@ -23,6 +23,18 @@
    
         <div class="grid_div">
             
+            <nav class="grid_nav" id="Kitreat"> 
+                <div><a href="Kitreat.html"> Kitreat </a></div>
+                <div class="categorize">Identity</div>
+                <img class="photos" id="Kitreat_photo" src="../img/Kitreat/Kitreat_0.png" width="400">
+            </nav>
+            
+            <nav class="grid_nav" id="Superhighway"> 
+                <div><a href="Superhighway.html"> Superhighway </a></div>
+                <div class="categorize">Video</div>
+                <img class="photos" id="Superhighway_photo" src="../img/Superhighway/Superhighway_0.png" width="400">
+            </nav>
+            
             <nav class="grid_nav" id="TT"> 
                 <div><a href="TT.html"> Texturing Type </a></div>
                 <div class="categorize">Graphic</div>
@@ -38,7 +50,7 @@
              <nav class="grid_nav" id="Gnnochi">
                 <div><a href="Gnnochi.html"> How to make Gnnochi </a></div>
                 <div class="categorize">Illustration</div>
-                <img class="photos" id="Gnnochi_photo" src="" width="400">
+                <img class="photos" id="Gnnochi_photo" src="../img/Gnnochi/Gnnochi_0.png" width="400">
             </nav>
 
             <nav class="grid_nav" id="EE">
@@ -91,7 +103,18 @@
     <script>
 
     /*img visibility*/
-     
+    $("#Kitreat").mouseover(function() {
+        $('#Kitreat_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Kitreat_photo').css("visibility", "hidden");
+    });
+        
+    $("#Superhighway").mouseover(function() {
+        $('#Superhighway_photo').css("visibility", "visible");
+    }).mouseout(function() {
+        $('#Superhighway_photo').css("visibility", "hidden");
+    });
+        
     $("#TT").mouseover(function() {
         $('#TT_photo').css("visibility", "visible");
     }).mouseout(function() {
@@ -134,10 +157,10 @@
         $('#Psalms_photo').css("visibility", "hidden");
     });
 
-    $("#Ganadara").mouseover(function() {
-        $('#Ganadara_photo').css("visibility", "visible");
+    $("#Political").mouseover(function() {
+        $('#Political_photo').css("visibility", "visible");
     }).mouseout(function() {
-        $('#Ganadara_photo').css("visibility", "hidden");
+        $('#Political_photo').css("visibility", "hidden");
     });
 
     $("#Ori").mouseover(function() {
@@ -158,6 +181,18 @@
     var x_offset = 750;
     var y_offset = 650;
     function updatePosition( e ){
+        var Kitreat_photo = document.getElementById("Kitreat_photo");
+        Kitreat_photo.style.top = e.y - Kitreat_photo.clientHeight + y_offset/2 + "px";
+        Kitreat_photo.style.left = e.x - Kitreat_photo.clientWidth + x_offset/2 + "px";
+        
+        var Superhighway_photo = document.getElementById("Superhighway_photo");
+        Superhighway_photo.style.top = e.y - Superhighway_photo.clientHeight + y_offset/2 + "px";
+        Superhighway_photo.style.left = e.x - Superhighway_photo.clientWidth + x_offset/2 + "px";
+        
+        var GMC_photo = document.getElementById("GMC_photo");
+        GMC_photo.style.top = e.y - GMC_photo.clientHeight + y_offset/2 + "px";
+        GMC_photo.style.left = e.x - GMC_photo.clientWidth + x_offset + "px";
+        
         var TT_photo = document.getElementById("TT_photo");
         TT_photo.style.top = e.y -TT_photo.clientHeight + y_offset/2 + "px";
         TT_photo.style.left = e.x - TT_photo.clientWidth + x_offset/2 + "px";
