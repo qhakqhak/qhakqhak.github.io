@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title> Texturing Type </title>
+        <link rel = "stylesheet"  href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" id="SB" style="display:block">
+            <a href="index.html"><h1 class="sidebar_name">Seoyoung Qhak</h1></a>
+            <a class="sidebar_info" href="info.html">i</a>
+            <a class="sidebar_insta" href="https://www.instagram.com/gwakagi">♥</a>
+            <a class="sidebar_email" href="#">✉</a>
+        </div>
+
+        <div class="md_grid">
+            <div class="main_image"> 
+                <img src="img/TT/TT_1.jpeg">
+            </div>
+            <div class="md_info">
+                <div class="md_info_eng">
+                    <h2>Texturing Type</h2>
+                    <p> TEXTURING TYPE is a project that deals with the texture experiment of 'Typegajok'. 
+                      In Part 1, Roman characters from A to Z were created based on various thematic consciousness of texture. 
+                      Various materials and methods in which individuals created TYPES, such as knitting, origami, transparent bodies, and sprays, will be introduced along with the process. 
+                      Part. 2 creates a new type of texture by teaming up members who made the texture in a similar way. 
+                      This book contains the process of the texture creating its own form beyond a given boundary. (Book Design: Solbee Tae)
+                        </p>
+                </div>
+                <div class="md_info_kor">
+                    <h2>Texturing Type</h2>
+                    <p> 『TEXTURING TYPE』은 ‘글자가족’의 질감 실험을 다룬 프로젝트이다. 
+                      Part.1에서는 질감에 대한 다양한 주제의식을 바탕으로 A부터 Z까지의 로마자를 만들었다. 
+                      이어서 니팅, 종이접기, 투명체, 스프레이 등 개개인이 글자(Type)를 만들어낸 다양한 재료와 방식이 프로세스와 함께 소개된다. 
+                      Part. 2에서는 텍스처를 유사한 방식으로 만든 구성원끼리 둘씩 짝을 지어 새로운 유형(Type)의 텍스쳐를 엮어낸다. 
+                      책에는 글자의 외피 아래에 갇힌 텍스처가, 주어진 경계를 넘어서 형태를 스스로 창조해내는 과정을 담고 있다.(책 디자인: 태솔비)
+                      </p>
+                </div>
+            </div>
+          
+
+
+            <br><br><br><br>
+            <div class="add_info">
+                <p class="add_info_eng">
+                    Part. 1 Texturing Distancing<br>
+                    In Part 1, the members of the Typegajok built the shape of the letter with different theme. 
+                    Using the 3D program Cinema 4D, Seoyoung Qhak placed some arbitrary abstract figures on the virtual space 
+                    and found a specific Roman character between the gaps they formed. 
+                    Through a method of taking a picture of the actual texture of an object and using it as a texture, 
+                    it was intended to create a landscape that exists only in the virtual world.
+                </p>
+                <p class="md_info_kor"><br>
+                    Part. 1에서 글자가족 구성원들은 대한 각기 다른 주제 의식을 가지고 글자의 형상을 쌓았다. 
+                    곽서영은 3D 프로그램인 cinema 4D를 이용하여, 임의의 추상 도형 몇 개를 가상 공간 위에 놓은 후 이들이 형성하는
+                    틈새 사이로 특정 로마자의 형태를 찾았다. 한편, 실제 사물의 질감을 사진으로 찍어 이를 텍스쳐로 활용하는 방법을 통해 
+                    가상 세계에서만 존재하는 풍경을 만들고자 했다.
+                </p>
+            </div>
+
+            <div class="slideshow-container">
+                
+                <div class="mySlides1">
+                  <img src="../img/Gnnochi/Gnnochi_1.jpg">
+                </div>
+                
+                <div class="mySlides1">
+                  <img src="../img/Gnnochi/Gnnochi_2.jpg">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="../img/Gnnochi/Gnnochi_3.jpg">
+                </div>
+              
+                <div class="mySlides1">
+                  <img src="../img/Gnnochi/Gnnochi_4.jpg">
+                </div>
+                
+                <div class="mySlides1">
+                  <img src="../img/Gnnochi/Gnnochi_5.jpg">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div>
+            
+            <div class="footer"> a </div>
+            </div>
+        
+        
+
+
+        <script>
+            var slideIndex = [1,1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            showSlides(1, 2);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+                    
+
+    </body>
+</html>
