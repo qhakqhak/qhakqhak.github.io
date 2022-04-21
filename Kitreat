@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Kitreat</title>
+        <link rel = "stylesheet"  href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" id="SB" style="display:block">
+            <a href="index.html"><h1 class="sidebar_name">Seoyoung Qhak</h1></a>
+            <a class="sidebar_info" href="info.html">i</a>
+            <a class="sidebar_insta" href="">♥</a>
+            <a class="sidebar_email" href="#">✉</a>
+        </div>
+
+        <div class="md_grid">
+            <div class="main_image"> 
+                <img src="../img/Kitreat/Kitreat.jpg">
+            </div>
+            <div class="md_info">
+                <div class="md_info_eng">
+                    <h2>Kitreat</h2>
+                    <p> Kitreat is Telemedicine App that allows children to participate in the treatment themselves.
+                        </p>
+                </div>
+                <div class="md_info_kor">
+                    <h2>키트리</h2>
+                    <p> 키트리는 아이가 직접 진료에 참여하게 만드는 새로운 원격 아동 진료 플랫폼입니다.
+                    진료 당사자인 아이의 참여를 적극적으로 유도하는 소아에 특화된 원격 의료 서비스를 개발하여, 
+                    아이들이 진료에 익숙해질 수 있도록 합니다. </p>
+                </div>
+
+            </div>
+            <div class="detail_image">
+                <img src="../img/Kitreat/Kitreat_1.png">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/Kitreat/Kitreat_2.png">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/Kitreat/Kitreat_3.png">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/Kitreat/Kitreat_4.jpg">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/Kitreat/Kitreat_5.jpg">
+            </div>
+
+            <div class="footer"> a </div>
+        
+        
+        </div>
+
+
+
+
+    </body>
+</html>
