@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title> How to make Gnnochi</title>
+        <link rel = "stylesheet"  href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="sidebar" id="SB" style="display:block">
+            <a href="index.html"><h1 class="sidebar_name">Seoyoung Qhak</h1></a>
+            <a class="sidebar_info" href="info.html">i</a>
+            <a class="sidebar_insta" href="">♥</a>
+            <a class="sidebar_email" href="#">✉</a>
+        </div>
+
+        <div class="md_grid">
+            <div class="main_image"> 
+                <img src="../img/gnnochi/gnnochi0.jpg">
+            </div>
+            <div class="md_info">
+                <div class="md_info_eng">
+                    <h2>How to make Gnnochi</h2>
+                    <p> I tried to visualize the various senses that can be felt while making gnocchi. 
+                   These illustrations were produced as part of the Visual Sequence Workshop at Merz Akademie in the summer semester, 2021.
+                        </p>
+                </div>
+                <div class="md_info_kor">
+                    <h2></h2>
+                    <p> 뇨끼를 만드는 과정에서 느낄 수 있는 다양한 감각을 일러스트레이션을
+                    통해 시각적으로 나타내고자 했습니다. 본 일러스트는 2021-2학기 Merz
+                    Akademie에서 Visual Sequence Workshop의 일환으로 제작되었습니다.
+
+                        </p>
+                </div>
+
+            </div>
+            <div class="detail_image">
+                <img src="../img/gnnochi/gnnochi1.jpg">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/gnnochi/gnnochi2.jpg">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/gnnochi/gnnochi3.jpg">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/gnnochi/gnnochi4.jpg">
+            </div>
+
+            <div class="detail_image">
+                <img src="../img/gnnochi/gnnochi5.jpg">
+            </div>
+
+            <div class="footer"> a </div>
+        
+        
+        </div>
+
+
+
+
+    </body>
+</html>
