@@ -64,6 +64,12 @@
                 <div class="categorize">book</div>
                 <img class="photos" id="Psalms_photo" src="../img/Psalms/Psalms_preview.jpg" width="400">
             </nav>
+            
+            <nav class="grid_nav" id="Ganadara">
+                <div> <a href="Ganadara6.html">Ganadara #6</a></div>
+                <div class="categorize">book</div>
+                <img class="photos" id="Ganadara_photo" src="../img/Ganadara/image0.png" width="400">
+            </nav>
         
             <nav class="grid_nav" id="Ori">
                 <div> <a href="Ori.html">Ori-Jinhuk-Gui</a></div>
@@ -87,25 +93,13 @@
     }).mouseout(function() {
         $('#Kitreat_photo').css("visibility", "hidden");
     });
-        
-    $("#Superhighway").mouseover(function() {
-        $('#Superhighway_photo').css("visibility", "visible");
-    }).mouseout(function() {
-        $('#Superhighway_photo').css("visibility", "hidden");
-    });
-        
+       
     $("#TT").mouseover(function() {
         $('#TT_photo').css("visibility", "visible");
     }).mouseout(function() {
         $('#TT_photo').css("visibility", "hidden");
     });
-        
-    $("#GMC").mouseover(function() {
-        $('#GMC_photo').css("visibility", "visible");
-    }).mouseout(function() {
-        $('#GMC_photo').css("visibility", "hidden");
-    });
-        
+    
     $("#Gnnochi").mouseover(function() {
         $('#Gnnochi_photo').css("visibility", "visible");
     }).mouseout(function() {
@@ -136,10 +130,10 @@
         $('#Psalms_photo').css("visibility", "hidden");
     });
 
-    $("#Political").mouseover(function() {
-        $('#Political_photo').css("visibility", "visible");
+    $("#Ganadara").mouseover(function() {
+        $('#Ganadara_photo').css("visibility", "visible");
     }).mouseout(function() {
-        $('#Political_photo').css("visibility", "hidden");
+        $('#Ganadara_photo').css("visibility", "hidden");
     });
 
     $("#Ori").mouseover(function() {
@@ -163,22 +157,10 @@
         var Kitreat_photo = document.getElementById("Kitreat_photo");
         Kitreat_photo.style.top = e.y - Kitreat_photo.clientHeight + y_offset/2 + "px";
         Kitreat_photo.style.left = e.x - Kitreat_photo.clientWidth + x_offset/2 + "px";
-        
-        var Superhighway_photo = document.getElementById("Superhighway_photo");
-        Superhighway_photo.style.top = e.y - Superhighway_photo.clientHeight + y_offset/2 + "px";
-        Superhighway_photo.style.left = e.x - Superhighway_photo.clientWidth + x_offset/2 + "px";
-        
-        var GMC_photo = document.getElementById("GMC_photo");
-        GMC_photo.style.top = e.y - GMC_photo.clientHeight + y_offset/2 + "px";
-        GMC_photo.style.left = e.x - GMC_photo.clientWidth + x_offset + "px";
-        
+       
         var TT_photo = document.getElementById("TT_photo");
         TT_photo.style.top = e.y -TT_photo.clientHeight + y_offset/2 + "px";
         TT_photo.style.left = e.x - TT_photo.clientWidth + x_offset/2 + "px";
-        
-        var GMC_photo = document.getElementById("GMC_photo");
-        GMC_photo.style.top = e.y - GMC_photo.clientHeight + y_offset/2 + "px";
-        GMC_photo.style.left = e.x - GMC_photo.clientWidth + x_offset + "px";
         
         var Gnnochi_photo = document.getElementById("Gnnochi_photo");
         Gnnochi_photo.style.top = e.y - Gnnochi_photo.clientHeight + y_offset/2 + "px";
@@ -200,9 +182,9 @@
         Psalms_photo.style.top = e.y -Psalms_photo.clientHeight + y_offset/4 + "px";
         Psalms_photo.style.left = e.x - Psalms_photo.clientWidth + x_offset + "px";
 
-        var Ganadara_photo = document.getElementById("Political_photo");
-        Ganadara_photo.style.top = e.y - Political_photo.clientHeight + y_offset/3+"px";
-        Ganadara_photo.style.left = e.x - Political_photo.clientWidth + x_offset+"px";
+        var Ganadara_photo = document.getElementById("Ganadara_photo");
+        Ganadara_photo.style.top = e.y - Ganadara_photo.clientHeight + y_offset/3+"px";
+        Ganadara_photo.style.left = e.x - Ganadara_photo.clientWidth + x_offset+"px";
 
         var Ori_photo = document.getElementById("Ori_photo");
         Ori_photo.style.top = e.y -Ori_photo.clientHeight + y_offset/3 + "px";
